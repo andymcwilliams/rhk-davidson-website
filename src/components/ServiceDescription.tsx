@@ -3,21 +3,23 @@ import { ServiceEnum } from "../enum/services";
 import Card from "react-bootstrap/Card";
 
 export default function ServiceDescription(props: any) {
+  let service;
+
+  if (props.service === ServiceEnum.Commercial) {
+    service = "commercial";
+  } else if (props.service === ServiceEnum.Industrial) {
+    service = "industrial";
+  } else if (props.service === ServiceEnum.Domestic) {
+    service = "domestic";
+  }
+
   return (
     <>
-      {/* {props.service === ServiceEnum.Commercial && <p>Commercial</p>}
-      {props.service === ServiceEnum.Industrial && <p>Industrial</p>}
-      {props.service === ServiceEnum.Domestic && <p>Domestic</p>} */}
-
-      <Card style={{ width: "80%" }}>
+      <Card style={{ width: "100%" }}>
         <Card.Header>Quote</Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-              posuere erat a ante.{" "}
-            </p>
+            <p>{service}</p>
             <footer className="blockquote-footer">
               Someone famous in <cite title="Source Title">Source Title</cite>
             </footer>

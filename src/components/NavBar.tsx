@@ -13,7 +13,7 @@ export default function NavBar(props: any) {
       sticky="top"
     >
       <Navbar.Brand href="/" style={{ paddingLeft: "18%", margin: "-80px" }}>
-        <img src={logo} height="230" alt="React Bootstrap logo" />
+        <img src={logo} height="200" alt="React Bootstrap logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

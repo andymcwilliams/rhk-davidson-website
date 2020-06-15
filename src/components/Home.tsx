@@ -9,56 +9,54 @@ export default function Home() {
   return (
     <div style={{ padding: "15px" }}>
       <Container>
-        <Row>
-          <Col>
-            <Row>
-              <Card style={{ width: "85%" }}>
-                <Card.Header>About the Business</Card.Header>
-                <Card.Body>
-                  <blockquote className="blockquote mb-0">
-                    <p>
-                      {" "}
-                      We have been in the electrical business located in
-                      Coleraine since 1959 and have been working within the
-                      North West area for over 50 years. We have a large number
-                      of repeat customers due to our friendly customer service
-                      and high standard of workmanship, with premises at{" "}
-                      <a href="https://maps.google.com/?q=33-35+Bushmills+Rd,+Coleraine+BT52+2BP">
-                        35 Bushmills Road Coleraine
-                      </a>{" "}
-                      we can be easily located. For all your electrical needs
-                      please phone today where we will be happy to assist you.{" "}
-                    </p>
-                  </blockquote>
-                </Card.Body>
-              </Card>
-              <Card style={{ width: "85%" }}>
-                <Card.Header>Electrical Contractors</Card.Header>
-                <Card.Body>
-                  <blockquote className="blockquote mb-0">
-                    <p>
-                      {" "}
-                      We are NICEIC Approved Contractors who are assessed to the
-                      highest standards covering all types of electrical
-                      contractors and installations. To view all the service we
-                      provide please visit our services page.{" "}
-                    </p>
-                  </blockquote>
-                </Card.Body>
-                <Card.Img
-                  style={{
-                    width: "15%",
-                    margin: "10px",
-                  }}
-                  variant="top"
-                  src={nic}
-                />
-              </Card>
-              {/* <ServiceDescription service={service} />
+        <Col>
+          <Row>
+            <Card style={{ width: "100%" }}>
+              <Card.Header>About the Business</Card.Header>
+              <Card.Body>
+                <blockquote className="blockquote mb-0">
+                  <p>
+                    {" "}
+                    We have been in the electrical business located in Coleraine
+                    since 1959 and have been working within the North West area
+                    for over 50 years. We have a large number of repeat
+                    customers due to our friendly customer service and high
+                    standard of workmanship, with premises at{" "}
+                    <a href="https://maps.google.com/?q=33-35+Bushmills+Rd,+Coleraine+BT52+2BP">
+                      35 Bushmills Road Coleraine
+                    </a>{" "}
+                    we can be easily located. For all your electrical needs
+                    please phone today where we will be happy to assist you.{" "}
+                  </p>
+                </blockquote>
+              </Card.Body>
+            </Card>
+            <Card style={{ width: "100%" }}>
+              <Card.Header>Electrical Contractors</Card.Header>
+              <Card.Body>
+                <blockquote className="blockquote mb-0">
+                  <p>
+                    {" "}
+                    We are NICEIC Approved Contractors who are assessed to the
+                    highest standards covering all types of electrical
+                    contractors and installations. To view all the service we
+                    provide please visit our services page.{" "}
+                  </p>
+                </blockquote>
+              </Card.Body>
+              <Card.Img
+                style={{
+                  width: "15%",
+                  margin: "10px",
+                }}
+                variant="top"
+                src={nic}
+              />
+            </Card>
+            {/* <ServiceDescription service={service} />
               <ServiceDescription service={service} /> */}
-            </Row>
-          </Col>
-        </Row>
+          </Row>
+        </Col>
       </Container>
     </div>
   );

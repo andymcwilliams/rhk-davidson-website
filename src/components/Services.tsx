@@ -15,9 +15,10 @@ export default function Services() {
   }
 
   return (
-    <div style={{ padding: "15px" }}>
+    <div style={{ paddingTop: "15px" }}>
       <Container>
         <ServiceThumbnail serviceApplied={serviceApplied} />
+        <ServiceDescription service={service} />
       </Container>
     </div>
   );
