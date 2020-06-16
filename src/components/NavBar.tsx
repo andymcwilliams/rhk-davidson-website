@@ -18,6 +18,7 @@ export default function NavBar(props: any) {
         style={{ marginTop: "-80px", marginBottom: "-90px" }}
         alt="RHK Davidson Logo"
       />
+
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <div>
