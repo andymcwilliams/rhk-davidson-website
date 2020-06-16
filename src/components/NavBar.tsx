@@ -13,6 +13,7 @@ export default function NavBar(props: any) {
       sticky="top"
     >
       <img
+        className="logo"
         src={logo}
         width="350px"
         style={{ marginTop: "-80px", marginBottom: "-90px" }}

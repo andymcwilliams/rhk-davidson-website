@@ -17,6 +17,12 @@
   font-weight: 500;
 }
 
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 270px;
+  }
+}
+
 .infoStrip {
   font-weight: 400;
   align-items: center;
@@ -26,6 +32,12 @@
 @media (max-width: 600px) {
   .infoStrip {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .infoStrip {
+    font-size: 8px;
   }
 }
 
