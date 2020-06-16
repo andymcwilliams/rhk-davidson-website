@@ -1,27 +1,32 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import logo from "../images/logo-yellow.png";
+import logo from "../images/logo.png";
 
 export default function NavBar(props: any) {
   return (
     <Navbar
       collapseOnSelect
-      expand="lg"
-      bg={props.colour}
-      variant={props.colour}
+      expand="sm"
+      bg="warning"
+      variant="dark"
       sticky="top"
     >
-      <Navbar.Brand href="/" style={{ paddingLeft: "18%", margin: "-80px" }}>
-        <img src={logo} height="200" alt="React Bootstrap logo" />
-      </Navbar.Brand>
+      <img
+        src={logo}
+        width="350px"
+        style={{ marginTop: "-80px", marginBottom: "-90px" }}
+        alt="RHK Davidson Logo"
+      />
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="m-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="#Services">Services</Nav.Link>
-          <Nav.Link href="#Contact">Contact Us</Nav.Link>
-        </Nav>
+        <div>
+          <Nav variant="pills" className="mr-auto" defaultActiveKey="#Home">
+            <Nav.Link href="#Home">Home</Nav.Link>
+            <Nav.Link href="#Services">Services</Nav.Link>
+            <Nav.Link href="#Contact">Contact Us</Nav.Link>
+          </Nav>
+        </div>
       </Navbar.Collapse>
     </Navbar>
   );

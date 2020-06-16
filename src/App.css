@@ -6,6 +6,29 @@
   cursor: pointer;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1a1f86;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #1a1f86;
+  font-weight: 500;
+}
+
+.infoStrip {
+  font-weight: 400;
+  align-items: center;
+  display: inline;
+}
+
+@media (max-width: 600px) {
+  .infoStrip {
+    font-size: 10px;
+  }
+}
+
 h2 {
   color: #282c34;
 }
