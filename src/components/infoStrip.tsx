@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 
 export default function InfoStrip(props: any) {
   return (
-    <Row className="infoStrip">
+    <Row className="infoStrip" id="test">
       <span>
         <img
           style={{ marginBottom: "4px" }}

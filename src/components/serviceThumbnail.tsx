@@ -2,6 +2,7 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+
 import nic from "../images/nic-eic.png";
 import { ServiceEnum } from "../enum/services";
 import Col from "react-bootstrap/Col";
@@ -43,9 +44,9 @@ export default function ServiceThumbnail(props: any) {
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src={nic} />
           <Card.Body>
-            <Card.Title>Industrial</Card.Title>
+            <Card.Title>Maintenance</Card.Title>
             <Button
-              onClick={() => props.serviceApplied(ServiceEnum.Industrial)}
+              onClick={() => props.serviceApplied(ServiceEnum.Maintenance)}
               variant="warning"
             >
               Click for more info
