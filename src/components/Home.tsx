@@ -10,7 +10,7 @@ export default function Home() {
     <div style={{ padding: "15px" }}>
       <Col>
         <Row>
-          <Card style={{ width: "100%" }}>
+          <Card>
             <Card.Header>About the Business</Card.Header>
             <Card.Body>
               <blockquote className="blockquote mb-0">
@@ -30,7 +30,7 @@ export default function Home() {
               </blockquote>
             </Card.Body>
           </Card>
-          <Card style={{ width: "100%" }}>
+          <Card>
             <Card.Header>Electrical Contractors</Card.Header>
             <Card.Body>
               <blockquote className="blockquote mb-0">
@@ -45,7 +45,7 @@ export default function Home() {
             </Card.Body>
             <Card.Img
               style={{
-                width: "15%",
+                width: "25%",
                 margin: "10px",
               }}
               variant="top"

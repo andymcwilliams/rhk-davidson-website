@@ -1,81 +1,78 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
-import nic from "../images/nic-eic.png";
 import phone from "../images/phone.jpg";
-import clock from "../images/clock.png";
 import email from "../images/email.png";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import CardGroup from "react-bootstrap/CardGroup";
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 export default function Contact() {
-  // return (
-  //   <>
-  //     <div>
-  //       <img
-  //         style={{ marginBottom: "4px" }}
-  //         src={phone}
-  //         alt="phone"
-  //         width="20"
-  //       />
-  //       <a style={{ marginRight: "30px" }} href="tel:+02870342281">
-  //         02870342281
-  //       </a>
-  //       <img
-  //         style={{ marginBottom: "3px" }}
-  //         src={clock}
-  //         alt="clock"
-  //         width="20"
-  //       />
-  //       <a style={{ marginRight: "30px" }}> Mon-Fri 8:30AM-5:30PM</a>
-  //       <img
-  //         style={{ marginBottom: "3px", marginRight: "2px" }}
-  //         src={email}
-  //         alt="mail"
-  //         width="20"
-  //       />
-  //       <a href="mailto:rhkdavidson@aol.com">rhkdavidson@aol.com</a>
-  //     </div>
-  //   </>
-  // );
-
   return (
-    <div>
-      <Row className="align-items-center">
-        <Card style={{ width: "40%" }}>
-          <Card.Header>Phone</Card.Header>
+    <>
+      <CardGroup>
+        <Card className="text-center" style={{ width: "18rem" }}>
           <Card.Body>
-            <img
-              style={{ marginRight: "30px" }}
-              src={phone}
-              alt="phone"
-              width="100"
-            />
-            <a style={{ fontSize: "50px" }} href="tel:+02870342281">
-              02870342281
-            </a>
+            <img src={phone} alt="phone" width="100" />
+            <Card.Text>
+              <a style={{ fontSize: "40px" }} href="tel:02870342281">
+                02870342281
+              </a>
+            </Card.Text>
+            <Button href="tel:02870342281" variant="primary">
+              Call us now!
+            </Button>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">Open Mon-Fri 8:30AM-5:00PM</small>
+          </Card.Footer>
+        </Card>
+        <Card className="text-center" style={{ width: "18rem" }}>
+          <Card.Body>
+            <img src={email} alt="mail" width="100" />
+            <Card.Text>
+              <a
+                href="mailto:rhkdavidson@aol.com"
+                style={{ marginRight: "30px", fontSize: "40px" }}
+              >
+                rhkdavidson@aol.com
+              </a>
+            </Card.Text>
+            <Button href="mailto:rhkdavidson@aol.com" variant="primary">
+              Email us with any queries!
+            </Button>
           </Card.Body>
         </Card>
-      </Row>
-      <Row className="align-items-center">
-        <Card style={{ width: "40%" }}>
-          <Card.Header>Email</Card.Header>
-          <Card.Body>
-            <img
-              style={{ marginRight: "30px" }}
-              src={email}
-              alt="mail"
-              width="100"
-            />
-            <a
-              href="mailto:rhkdavidson@aol.com"
-              style={{ marginRight: "30px", fontSize: "50px" }}
-            >
-              rhkdavidson@aol.com
-            </a>
-          </Card.Body>
-        </Card>
-      </Row>
-    </div>
+      </CardGroup>
+      <Card>
+        <Card.Header>
+          <p style={{ fontSize: "20px", fontWeight: "bold" }}>
+            If you prefer, fill out this form and we will get back to you as
+            soon as possible.
+          </p>
+        </Card.Header>
+        <Form>
+          <Row>
+            <Col>
+              <Form.Control placeholder="First name" />
+            </Col>
+            <Col>
+              <Form.Control placeholder="Last name" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Form.Control type="email" placeholder="Enter email" />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Form.Control type="tel" placeholder="Home Phone Number" />
+            </Col>
+          </Row>
+        </Form>
+      </Card>
+    </>
   );
 }

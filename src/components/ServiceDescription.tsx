@@ -37,7 +37,7 @@ export default function ServiceDescription(props: any) {
 
   return (
     <>
-      <Card style={{ width: "100%", height: "200px" }}>
+      <Card>
         <Card.Header>{serviceHeader}</Card.Header>
         <Card.Body>
           <blockquote className="blockquote mb-0">
@@ -55,7 +55,7 @@ export default function ServiceDescription(props: any) {
           />
           <Carousel.Caption>
             <h3>Under Suffit Lighting</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Domestic</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -63,7 +63,7 @@ export default function ServiceDescription(props: any) {
 
           <Carousel.Caption>
             <h3>LED Lighting</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Domestic.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

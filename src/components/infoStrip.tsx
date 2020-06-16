@@ -2,7 +2,6 @@ import React from "react";
 import phone from "../images/phone.jpg";
 import clock from "../images/clock.png";
 import email from "../images/email.png";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 export default function InfoStrip(props: any) {
@@ -24,7 +23,7 @@ export default function InfoStrip(props: any) {
           alt="clock"
           width="20"
         />
-        <a style={{ marginRight: "30px" }}> Mon-Fri 8:30AM-5:30PM</a>
+        <a style={{ marginRight: "30px" }}> Mon-Fri 8:30AM-5:00PM</a>
         <img
           style={{ marginBottom: "3px", marginRight: "2px" }}
           src={email}

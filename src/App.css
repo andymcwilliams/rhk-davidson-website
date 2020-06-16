@@ -29,6 +29,10 @@
   display: inline;
 }
 
+.form-label {
+  font-weight: 500;
+}
+
 @media (max-width: 600px) {
   .infoStrip {
     font-size: 10px;
