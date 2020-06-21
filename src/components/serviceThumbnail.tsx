@@ -3,6 +3,9 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import nic from "../images/nic-eic.png";
+import house from "../images/house.jpg";
+import shoppingMall from "../images/shopping-mall.jpg";
+import maintenance from "../images/maintenance2.jpg";
 import { ServiceEnum } from "../enum/services";
 import CardGroup from "react-bootstrap/CardGroup";
 
@@ -11,7 +14,7 @@ export default function ServiceThumbnail(props: any) {
     <Row>
       <CardGroup>
         <Card>
-          <Card.Img variant="top" src={nic} />
+          <Card.Img variant="top" src={house} />
           <Card.Body>
             <Card.Title>Domestic</Card.Title>
             <Button
@@ -24,7 +27,7 @@ export default function ServiceThumbnail(props: any) {
         </Card>
 
         <Card>
-          <Card.Img variant="top" src={nic} />
+          <Card.Img variant="top" src={shoppingMall} />
           <Card.Body>
             <Card.Title>Commercial</Card.Title>
             <Button
@@ -37,7 +40,7 @@ export default function ServiceThumbnail(props: any) {
         </Card>
 
         <Card>
-          <Card.Img variant="top" src={nic} />
+          <Card.Img variant="top" src={maintenance} />
           <Card.Body>
             <Card.Title>Maintenance</Card.Title>
             <Button

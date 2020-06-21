@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import nic from "../images/nic-eic.png";
+import storeFront from "../images/rhk.png";
 
 export default function Home() {
   return (
@@ -28,6 +29,14 @@ export default function Home() {
                 </p>
               </blockquote>
             </Card.Body>
+            <Card.Img
+              style={{
+                width: "300px",
+                margin: "10px",
+              }}
+              variant="top"
+              src={storeFront}
+            />
           </Card>
           <Card>
             <Card.Header>Electrical Contractors</Card.Header>
