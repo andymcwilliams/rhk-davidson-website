@@ -11,7 +11,7 @@ export default function NavBar(props: any) {
       bg="warning"
       variant="dark"
       sticky="top"
-      //style={{ borderRadius: "0px 0px 20px 20px" }}
+      style={{ borderBottom: "5px solid #1a1f86" }}
     >
       <img
         className="logo"

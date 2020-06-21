@@ -13,7 +13,6 @@ function App() {
     <div className="App">
       <NavBar />
       <InfoStrip />
-
       <HashRouter>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -22,6 +21,7 @@ function App() {
           <Route exact path="/services" component={Services} />
         </Switch>
       </HashRouter>
+      <InfoStrip />
     </div>
   );
 }
