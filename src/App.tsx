@@ -22,7 +22,6 @@ function App() {
           <Route exact path="/services" component={Services} />
         </Switch>
       </HashRouter>
-      <InfoStrip />
     </div>
   );
 }
