@@ -23,8 +23,8 @@ export default function InfoStrip(props: any) {
             alt="phone"
             width="19"
           />
-          <a style={{ marginRight: "30px" }} href="tel:+02870342281">
-            02870342281
+          <a style={{ marginRight: "30px" }} href="tel:02870342281">
+            028 7034 2281
           </a>
           <img
             style={{ marginBottom: "3px" }}
