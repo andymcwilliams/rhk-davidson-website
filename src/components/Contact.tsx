@@ -12,12 +12,12 @@ export default function Contact() {
   return (
     <>
       <CardGroup>
-        <Card className="text-center" style={{ width: "18rem" }}>
+        <Card className="text-center">
           <Card.Body>
-            <img src={phone} alt="phone" width="100" />
+            <img src={phone} alt="phone" width="90" />
             <Card.Text>
               <a style={{ fontSize: "40px" }} href="tel:02870342281">
-                02870342281
+                028 7034 2281
               </a>
             </Card.Text>
             <Button href="tel:02870342281" variant="primary">
@@ -28,14 +28,11 @@ export default function Contact() {
             <small className="text-muted">Open Mon-Fri 8:30AM-5:00PM</small>
           </Card.Footer>
         </Card>
-        <Card className="text-center" style={{ width: "18rem" }}>
+        <Card className="text-center">
           <Card.Body>
-            <img src={email} alt="mail" width="100" />
+            <img src={email} alt="mail" width="90" />
             <Card.Text>
-              <a
-                href="mailto:rhkdavidson@aol.com"
-                style={{ marginRight: "30px", fontSize: "40px" }}
-              >
+              <a href="mailto:rhkdavidson@aol.com" style={{ fontSize: "40px" }}>
                 rhkdavidson@aol.com
               </a>
             </Card.Text>
@@ -45,9 +42,10 @@ export default function Contact() {
           </Card.Body>
         </Card>
       </CardGroup>
-      <Card>
+      <br />
+      {/* <Card>
         <Card.Header>
-          <p style={{ fontSize: "20px", fontWeight: "bold" }}>
+          <p style={{ fontSize: "19px", fontWeight: "bold" }}>
             If you prefer, fill out this form and we will get back to you as
             soon as possible.
           </p>
@@ -72,7 +70,7 @@ export default function Contact() {
             </Col>
           </Row>
         </Form>
-      </Card>
+      </Card> */}
     </>
   );
 }
