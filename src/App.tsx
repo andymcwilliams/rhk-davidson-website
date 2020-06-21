@@ -10,7 +10,12 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import * as Routes from "./appRoutes";
 
 function App() {
-  const [activeTab, setActiveTab] = useState(window.location.hash);
+  const startingTab =
+    window.location.hash === "#/" || !window.location.hash
+      ? Routes.HOME
+      : window.location.hash;
+
+  const [activeTab, setActiveTab] = useState(startingTab);
 
   function tabSelected(activeTab: string) {
     setActiveTab(activeTab);
@@ -19,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <NavBar activeTab={activeTab} tabSelected={tabSelected} />
+      <p>{window.location.hash}</p>
       <InfoStrip />
       <HashRouter>
         <Switch>
