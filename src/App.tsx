@@ -24,7 +24,6 @@ function App() {
   return (
     <div className="App">
       <NavBar activeTab={activeTab} tabSelected={tabSelected} />
-      <p>{window.location.hash}</p>
       <InfoStrip />
       <HashRouter>
         <Switch>
