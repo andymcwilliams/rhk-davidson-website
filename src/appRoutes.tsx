@@ -1,3 +1,3 @@
-export const HOME = "#Home";
-export const CONTACT = "#Contact";
-export const SERVICES = "#Services";
+export const HOME = "#/Home";
+export const CONTACT = "#/Contact";
+export const SERVICES = "#/Services";

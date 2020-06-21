@@ -10,7 +10,7 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import * as Routes from "./appRoutes";
 
 function App() {
-  const [activeTab, setActiveTab] = useState(Routes.HOME);
+  const [activeTab, setActiveTab] = useState(window.location.hash);
 
   function tabSelected(activeTab: string) {
     setActiveTab(activeTab);

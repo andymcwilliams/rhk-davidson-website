@@ -30,19 +30,19 @@ export default function NavBar(props: any) {
           <Nav variant="pills" className="mr-auto" activeKey={props.activeTab}>
             <Nav.Link
               onClick={() => props.tabSelected(Routes.HOME)}
-              href="#Home"
+              href="#/Home"
             >
               Home
             </Nav.Link>
             <Nav.Link
               onClick={() => props.tabSelected(Routes.SERVICES)}
-              href="#Services"
+              href="#/Services"
             >
               Services
             </Nav.Link>
             <Nav.Link
               onClick={() => props.tabSelected(Routes.CONTACT)}
-              href="#Contact"
+              href="#/Contact"
             >
               Contact Us
             </Nav.Link>
