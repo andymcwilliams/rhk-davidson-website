@@ -2,7 +2,6 @@ import React from "react";
 import { ServiceEnum } from "../enum/services";
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
-import nic from "../images/nic-eic.png";
 import suffitLighting from "../images/under-suffit-lighting.jpeg";
 import ledLighting from "../images/led-lighting.jpeg";
 

@@ -11,12 +11,13 @@ export default function NavBar(props: any) {
       bg="warning"
       variant="dark"
       sticky="top"
+      //style={{ borderRadius: "0px 0px 20px 20px" }}
     >
       <img
         className="logo"
         src={logo}
-        width="350px"
-        style={{ marginTop: "-80px", marginBottom: "-90px" }}
+        width="550px"
+        style={{ marginRight: "25px" }}
         alt="RHK Davidson Logo"
       />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import phone from "../images/phone.jpg";
+import phone from "../images/phone.png";
 import email from "../images/email.png";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";

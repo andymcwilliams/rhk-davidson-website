@@ -11,8 +11,9 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <InfoStrip />
       <NavBar />
+      <InfoStrip />
+
       <HashRouter>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/services" component={Services} />
         </Switch>
       </HashRouter>
+      <InfoStrip />
     </div>
   );
 }
