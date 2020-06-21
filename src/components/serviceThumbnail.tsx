@@ -2,7 +2,6 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import nic from "../images/nic-eic.png";
 import house from "../images/house.jpg";
 import shoppingMall from "../images/shopping-mall.jpg";
 import maintenance from "../images/maintenance2.jpg";

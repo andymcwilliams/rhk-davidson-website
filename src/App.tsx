@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Home from "./components/Home";
@@ -7,11 +7,18 @@ import InfoStrip from "./components/infoStrip";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import { HashRouter, Switch, Route } from "react-router-dom";
+import * as Routes from "./appRoutes";
 
 function App() {
+  const [activeTab, setActiveTab] = useState(Routes.HOME);
+
+  function tabSelected(activeTab: string) {
+    setActiveTab(activeTab);
+  }
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar activeTab={activeTab} tabSelected={tabSelected} />
       <InfoStrip />
       <HashRouter>
         <Switch>
