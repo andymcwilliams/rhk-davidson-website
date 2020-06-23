@@ -22,7 +22,7 @@ export default function Home() {
                   due to our friendly customer service and high standard of
                   workmanship, with premises at{" "}
                   <a href="https://maps.google.com/?q=33-35+Bushmills+Rd,+Coleraine+BT52+2BP">
-                    35 Bushmills Road Coleraine
+                    35 Bushmills Road Coleraine, BT52 2BP
                   </a>{" "}
                   we can be easily located. For all your electrical needs please
                   phone today where we will be happy to assist you.{" "}
